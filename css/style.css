@@ -25,6 +25,11 @@ header {
   justify-content: space-around;
 }
 
+header img{
+  width: 10rem;
+  height: 10rem;
+}
+
 .menu li {
   list-style: none;
   font-size: 50px;
@@ -418,6 +423,10 @@ footer {
   justify-content: space-around;
 }
 
+.logo{
+  width: 8rem;
+  height: 8rem;
+}
 footer a {
   color: white;
 }
