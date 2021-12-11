@@ -198,10 +198,30 @@ header img{
 .dato {
   grid-area: dato;
   background-color: rgba(123, 209, 66, 0.336);
-  margin: 0 0.3rem 0.5rem 0;
   text-align: center;
   padding: 1rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #5c855c;
+  height: 98%;
+}
+
+.dato h3{
+ font-size: 3rem;
+ background-color: #f1fff0;
+ padding: 0.5rem;
+
+}
+
+.dato img{
+  width: 100%;
+  height: 70%;
+  padding: 0.5rem;
+}
+
+.dato p{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: #f1fff0;
 }
 
 /*Guias*/
