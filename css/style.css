@@ -274,7 +274,7 @@ header img{
   color: white;
 }
 
-.secciones article {
+.opcionManual {
   font-family: "Quicksand", sans-serif;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -285,6 +285,12 @@ header img{
 
 .secciones button {
   margin: 0.5rem;
+}
+
+.card-header.titulo{
+  background-color: rgba(123, 209, 66, 0.336);
+  color: #447444;
+  
 }
 
 /*Cannabis Medicinal*/
