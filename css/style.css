@@ -25,12 +25,25 @@ header {
   justify-content: space-around;
 }
 
-header img{
-  width: 10rem;
-  height: 10rem;
+.menu{
+  width: 100%;
+  height: 100%;
 }
 
-.menu li {
+.menu img{
+  width: 10rem;
+  height: 10rem;
+  margin-right: 5rem;
+}
+
+
+#opcionesMenu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+ } 
+#opcionesMenu li {
   list-style: none;
   font-size: 50px;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -39,22 +52,29 @@ header img{
   display: inline-block;
 }
 
-.menu li:hover {
+#opcionesMenu li:hover {
   background-color: rgb(57, 133, 6);
   border-radius: 150px;
 }
 
-.menu li a {
+#opcionesMenu li a {
   color: white;
   text-decoration: none;
 }
 
+
 .carrousel {
-  text-align: center;
   border: 0.5rem double ivory;
   background-image: url(https://previews.123rf.com/images/julydfg/julydfg1211/julydfg121100093/16529053-verde-marihuana-hojas-de-fondo-vector-ilustraci%C3%B3n-.jpg);
   background-position: center;
 }
+
+.carrousel img{
+margin: 0 auto;
+height: 35rem;
+width: 35rem;
+}
+
 
 .seccionCentral {
   display: grid;
@@ -587,3 +607,5 @@ footer a {
     text-align: center;
   }
 }
+
+

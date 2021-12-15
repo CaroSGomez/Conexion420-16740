@@ -5,38 +5,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
-      <img src="../multimedia/imagenes/LOGO.jpg" alt="LOGO" />
-      <nav>
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./guias.html">Guias de cultivo</a></li>
-          <li>
-            <a href="./cannabisMedicinal.html">Cannabis Medicinal</a>
-          </li>
-          <li><a href="./tienda.html">Tienda</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light menu">
+        <div class="container-fluid">
+          <img src="../multimedia/imagenes/LOGO.jpg" alt="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="opcionesMenu">
+              <li class="nav-item">
+                <a class="active" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./guias.html">Guias de cultivo</a>
+              </li>
+              <li class="nav-item">
+                <a href="./cannabisMedicinal.html">Cannabis Medicinal</a>
+              </li>
+              <li class="nav-item">
+                <a href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <section class="seccionesCbd">
       <div>
-        <article><h2>Marihuana y CBD</h2>
-          <img src="../multimedia/imagenes/marihuana-medicinal.jpg" alt="marihuana-medicinal"></article>
-        </div>
-        <div>
-
-          <article><h2>Ultimas Noticias</h2>
-            <img src="../multimedia/imagenes/Argentina. la marcha mundial de la marihuana se hizo por redes.jpg" alt="imagen de mapa de argentina"></article>
-          </div>
-          <div>
-
-            <article><h2>Tratamientos y recetas</h2>
-              <img src="../multimedia/imagenes/cannabis-89c2cf.jpg" alt="recetas"></article>
-            </div>
+        <article>
+          <h2>Marihuana y CBD</h2>
+          <img
+            src="../multimedia/imagenes/marihuana-medicinal.jpg"
+            alt="marihuana-medicinal"
+          />
+        </article>
+      </div>
+      <div>
+        <article>
+          <h2>Ultimas Noticias</h2>
+          <img
+            src="../multimedia/imagenes/Argentina. la marcha mundial de la marihuana se hizo por redes.jpg"
+            alt="imagen de mapa de argentina"
+          />
+        </article>
+      </div>
+      <div>
+        <article>
+          <h2>Tratamientos y recetas</h2>
+          <img src="../multimedia/imagenes/cannabis-89c2cf.jpg" alt="recetas" />
+        </article>
+      </div>
     </section>
     <section class="investigaciones">
       <h3>¿Cuánto sabes sobre cannabis medicinal?</h3>
@@ -120,5 +165,10 @@
         </ul>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
