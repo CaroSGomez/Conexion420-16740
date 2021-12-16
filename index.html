@@ -106,18 +106,36 @@
     </section>
     <section class="seccionCentral">
       <section class="primerSeccion">
-        <h1 class="animate__animated animate__heartBeat">Variedad del mes</h1>
-        <article class="primerSeccion__articulo">
-          <img src="./imagenes/jamaican.PNG" alt="planta de cannabis" />
-          <p>
-            Las semillas de cannabis Jamaican Dream CBD de Eva Seeds nacen tras
-            el cruce entre la famosa Jamaican Dream y Only CBD, una variedad con
-            altísimo nivel de CBD y muy bajo THC Ideales para cultivos de alto
-            rendimiento, dada su alta producción en una floración muy corta
-            (45-50 días). Disfruta de esta versión CBD de la auténtica Jamaican
-            Dream. THC: 5-8% CBD: 10-14%
-          </p>
-        </article>
+        <div class="card mb-3 primerSeccion__elegida">
+          <div class="row g-0">
+            <h5 class="card-title animate__animated animate__heartBeat">
+              Variedad del mes
+            </h5>
+            <div class="col-md-4">
+              <img
+                src="./imagenes/jamaican.PNG"
+                class="img-fluid rounded-start"
+                alt="planta de cannabis"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-text">
+                  Las semillas de cannabis Jamaican Dream CBD de Eva Seeds nacen
+                  tras el cruce entre la famosa Jamaican Dream y Only CBD, una
+                  variedad con altísimo nivel de CBD y muy bajo THC Ideales para
+                  cultivos de alto rendimiento, dada su alta producción en una
+                  floración muy corta (45-50 días). Disfruta de esta versión CBD
+                  de la auténtica Jamaican Dream.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">THC: 5-8% CBD: 10-14%</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <article class="primerSeccion__lista">
           <h2>Caracteristicas principales</h2>
           <ul>
@@ -136,32 +154,71 @@
         <h2 class="animate__animated animate__zoomInUp">
           ¡Podio de growshops amigues!
         </h2>
-        <div class="podio__puestos">
-          <article class="podio__puestos.Uno">
+        <div class="card-group m-5">
+          <div class="card podio">
             <img
               src="./multimedia/imagenes/SMG-logo-dark.png"
+             
               alt="logoSanMari"
             />
-            <a href="https://linktr.ee/sanmarigrow" class="boton">Visitar</a>
-          </article>
-          <article class="podio__puesto.Dos">
-            <img
+            <a href="https://linktr.ee/sanmarigrow" class="visitar">Visitar</a>
+          </div>
+            <div class="card podio">
+              <img
               src="./multimedia/imagenes/logocultivarg.png"
+              
               alt="logocultivarg"
-            />
-            <a href="https://cultivarg.com/" class="boton">Visitar</a>
-          </article>
-          <article class="podio__puesto.Tres">
+              />
+              <a href="https://linktr.ee/sanmarigrow" class="visitar">Visitar</a>
+            </div>
+          <div class="card podio">
             <img
               src="./multimedia/imagenes/descarga.png"
-              alt="logoCultibaires"
+             
+              alt="logoCultibaires..."
             />
-            <a href="https://cultibaires.com.ar/" class="boton">Visitar </a>
-          </article>
+            <a href="https://linktr.ee/sanmarigrow" class="visitar">Visitar</a>
+          </div>
         </div>
       </section>
       <section class="noticias">
         <h2>Lo más buscado</h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Registro REPROCANN
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Cultivo exterior              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Aceite de cannabis: Preparación              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
         <article><a href="#">Registro REPROCANN</a></article>
         <article><a href="#">Cultivo exterior</a></article>
         <article><a href="#">Aceite de cannabis: Preparación</a></article>
