@@ -198,31 +198,35 @@ width: 35rem;
 
 .noticias h2 {
   font-size: 4rem;
-  text-decoration: underline;
   text-align: center;
 }
 
-.noticias article {
+.noticias button{
+  font-size: 2.5rem;
+  color: #5c855c;
   background-color: ivory;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 3rem;
-  border: 0.2rem solid #5c855c;
 }
 
-.noticias article a {
-  text-decoration: none;
+.noticias__info{
+  font-size: 1rem;
+}
+
+.noticias__info a{
+  font-weight: bold;
   color: #5c855c;
+  text-decoration: none;
 }
 
 .dato {
   grid-area: dato;
   background-color: rgba(123, 209, 66, 0.336);
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
   color: #5c855c;
-  height: 98%;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .dato h3{
@@ -239,7 +243,7 @@ width: 35rem;
 }
 
 .dato p{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 0.5rem;
   background-color: #f1fff0;
 }
