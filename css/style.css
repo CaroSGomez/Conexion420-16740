@@ -285,6 +285,7 @@ width: 35rem;
   text-decoration: none;
   color: #5c855c;
   padding: 1rem;
+  border-radius: 150px;
 }
 
 .instructivo__opciones li a:hover {
