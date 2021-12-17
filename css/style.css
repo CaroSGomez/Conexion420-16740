@@ -314,21 +314,54 @@ width: 35rem;
 
 /*Cannabis Medicinal*/
 
-.seccionesCbd {
-  font-family: "Architects Daughter", cursive;
-  font-size: 3rem;
-  text-align: center;
-  text-decoration: underline;
-  color: #5c855c;
+.primerseccion {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.8rem;
+  grid-template-areas: "cbd noticias recetas";
   background-color: rgba(123, 209, 66, 0.336);
-  display: flex;
-  align-items: center;
+}
+ .primerseccion img {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+    border-radius: 15%;
+  }
+  .primerseccion p {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(92, 133, 92);
+  }
+.primerseccion__cbd {
+  width: 100%;
+  height: 100%;
+  grid-area: cbd;
+  border: 0.3rem solid rgb(92, 133, 92);
+  border-radius: 10%;
+  background-color: rgb(221, 255, 221);
+}
+.primerseccion__noticias {
+  width: 100%;
+  height: 100%;
+  grid-area: noticias;
+  border: 0.3rem solid rgb(92, 133, 92);
+  border-radius: 10%;
+  background-color: rgb(221, 255, 221);
 }
 
-.seccionesCbd img {
-  width: 25rem;
-  height: 30rem;
-  margin: 1rem;
+.primerseccion__recetas {
+  width: 100%;
+  height: 100%;
+  grid-area: recetas;
+  border: 0.3rem solid rgb(92, 133, 92);
+  border-radius: 10%;
+  background-color: rgb(221, 255, 221);
 }
 
 .investigaciones {
@@ -736,5 +769,4 @@ footer a {
     text-align: center;
   }
 }
-
 
