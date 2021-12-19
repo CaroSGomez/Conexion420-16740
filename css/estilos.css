@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300;500&family=Yanone+Kaffeesatz:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+/*font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'Neucha', cursive;
+font-family: 'Rampart One', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Quicksand', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  padding: 1.5rem;
+  background-color: #4f991e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .menu {
+  width: 100%;
+  height: 100%;
+}
+
+header .menu img {
+  width: 10rem;
+  height: 10rem;
+  margin-right: 5rem;
+}
+
+#opcionesMenu {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#opcionesMenu li {
+  list-style: none;
+  font-size: 50px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  display: inline-block;
+}
+
+#opcionesMenu li a {
+  color: white;
+  text-decoration: none;
+}
+
+#opcionesMenu li:hover {
+  background-color: #398506;
+  border-radius: 150px;
+}
+
+footer {
+  background-color: #2f5813;
+  color: white;
+  padding: 1rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer .footer__redes {
+  margin-top: 1rem;
+}
+
+footer .footer__redes ul li {
+  list-style-type: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #2f58135e;
+  padding: 0.5rem;
+  border-radius: 150px;
+  margin: 0.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+footer .footer__redes ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+footer .footer__redes img {
+  width: 100%;
+  height: 100%;
+  padding: 0.1rem;
+}
+
+.carrousel {
+  border: 0.5rem double ivory;
+  background-image: url(https://previews.123rf.com/images/julydfg/julydfg1211/julydfg121100093/16529053-verde-marihuana-hojas-de-fondo-vector-ilustraci%C3%B3n-.jpg);
+  background-position: center;
+}
+
+.carrousel img {
+  margin: 0 auto;
+  height: 35rem;
+  width: 35rem;
+}
+
+.seccionCentral {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+      grid-template-areas: "variedad noticias" "podio dato";
+}
+
+.seccionCentral .primerSeccion {
+  background-color: rgba(123, 209, 66, 0.336);
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: variedad;
+}
+
+.seccionCentral .primerSeccion .primerSeccion__elegida {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.seccionCentral .primerSeccion h5 {
+  font-family: "Changa", sans-serif;
+  color: #5c855c;
+  text-decoration: underline;
+  font-size: 4rem;
+}
+
+.seccionCentral .primerSeccion img {
+  width: 15rem;
+  height: 20rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  margin: 1rem;
+}
+
+.seccionCentral .primerSeccion p {
+  padding: 1rem;
+  font-family: "Changa", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.seccionCentral .primerSeccion .primerSeccion__lista {
+  color: #5c855c;
+  font-family: "Changa", sans-serif;
+  background-color: #f1fff0;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.seccionCentral .primerSeccion .primerSeccion__lista h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.seccionCentral .primerSeccion .primerSeccion__lista ul li {
+  font-size: 1.5rem;
+  list-style-type: none;
+  background-color: rgba(123, 209, 66, 0.151);
+}
+
+.seccionCentral .segundaSeccion {
+  border: 0.3rem solid #5c855c;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: podio;
+}
+
+.seccionCentral .segundaSeccion h2 {
+  font-family: "Rampart One", cursive;
+  font-size: 3rem;
+  color: #5c855c;
+}
+
+.seccionCentral .segundaSeccion .podio {
+  background-color: rgba(20, 121, 20, 0.055);
+  border: dotted 0.3rem #5c855c;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 5rem;
+}
+
+.seccionCentral .segundaSeccion .podio img {
+  height: 10rem;
+}
+
+.seccionCentral .segundaSeccion .podio .visitar {
+  text-decoration: none;
+  background-color: #5c855c;
+  border-radius: 150px;
+  color: white;
+  font-family: "Rampart One", cursive;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.seccionCentral .noticias {
+  border: 0.3rem solid #5c855c;
+  padding: 1rem;
+  font-family: "Architects Daughter", cursive;
+  color: #5c855c;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: noticias;
+}
+
+.seccionCentral .noticias h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.seccionCentral .noticias button {
+  font-size: 2.5rem;
+  color: #5c855c;
+  background-color: rgba(123, 209, 66, 0.336) !important;
+}
+
+.seccionCentral .noticias .noticias__info {
+  font-size: 1rem;
+}
+
+.seccionCentral .noticias .noticias__info a {
+  font-weight: bold;
+  color: #5c855c;
+  text-decoration: none;
+}
+
+.seccionCentral .dato {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: dato;
+  background-color: rgba(123, 209, 66, 0.336);
+  text-align: center;
+  padding: 1.5rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #5c855c;
+  height: 100%;
+  width: 100%;
+}
+
+.seccionCentral .dato h3 {
+  font-size: 3rem;
+  background-color: #f1fff0;
+  padding: 0.5rem;
+}
+
+.seccionCentral .dato img {
+  width: 100%;
+  height: 70%;
+  padding: 0.5rem;
+}
+
+.seccionCentral .dato p {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  background-color: #f1fff0;
+}
+
+.primerSeccion img:hover {
+  width: 25rem;
+  height: 25rem;
+}
+
+.podio:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.instructivo {
+  color: #5c855c;
+  font-family: "Changa", sans-serif;
+  background-color: #f1fff0;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.5rem double #4f991e;
+}
+
+.instructivo .instructivo__manual h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.instructivo .instructivo__manual img {
+  margin: 2rem 5rem;
+  width: 20rem;
+}
+
+.instructivo .instructivo__opciones {
+  list-style-type: none;
+  text-align: start;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin: 6rem 5rem;
+}
+
+.instructivo .instructivo__opciones li {
+  margin: 1rem;
+}
+
+.instructivo .instructivo__opciones li a {
+  text-decoration: none;
+  color: #5c855c;
+  padding: 1rem;
+  border-radius: 150px;
+}
+
+.instructivo__opciones li a:hover {
+  background-color: #4f991e;
+  color: white;
+}
+
+.secciones .opcionManual {
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-image: url(https://previews.123rf.com/images/julydfg/julydfg1211/julydfg121100093/16529053-verde-marihuana-hojas-de-fondo-vector-ilustraci%C3%B3n-.jpg);
+  background-position: center;
+}
+
+.secciones .opcionManual button {
+  margin: 0.5rem;
+}
+
+.secciones .card-header.titulo {
+  background-color: rgba(123, 209, 66, 0.336);
+  color: #447444;
+}
+
+.primerseccion {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0.8rem;
+      grid-template-areas: "cbd noticias recetas";
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.primerseccion img {
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+  border-radius: 15%;
+}
+
+.primerseccion p {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  color: #5c855c;
+}
+
+.primerseccion .primerseccion__cbd {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cbd;
+  border: 0.3rem solid #5c855c;
+  border-radius: 10%;
+  background-color: #ddffdd;
+}
+
+.primerseccion .primerseccion__noticias {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: noticias;
+  border: 0.3rem solid #5c855c;
+  border-radius: 10%;
+  background-color: #ddffdd;
+}
+
+.primerseccion .primerseccion__recetas {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: recetas;
+  border: 0.3rem solid #5c855c;
+  border-radius: 10%;
+  background-color: #ddffdd;
+}
+
+.investigaciones {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: #5c855c;
+  background-color: #f1fff0;
+  padding: 1rem;
+  border: 0.5rem double #4f991e;
+}
+
+.investigaciones h3 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.investigaciones article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.investigaciones article p {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.investigaciones h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: 1rem;
+}
+
+.productos {
+  font-family: "Rampart One", cursive;
+  font-size: 1.3rem;
+  color: #5c855c;
+  padding: 1rem;
+  background-color: rgba(123, 209, 66, 0.336);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productos article {
+  background-color: ivory;
+  margin: 1rem;
+  text-align: center;
+  width: 25rem;
+  height: 35rem;
+  padding: 1.9rem;
+  border-radius: 150px;
+  border: dotted 0.3rem #5c855c;
+}
+
+.productos img {
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+}
+
+.productos button {
+  background-color: #5c855c;
+  border-radius: 150px;
+  color: white;
+  font-family: "Rampart One", cursive;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.productos article:hover {
+  background-color: rgba(110, 161, 76, 0.205);
+  color: white;
+}
+
+.contacto {
+  background: -webkit-gradient(linear, left top, right top, from(#56b4d3e7), to(#348f4fe3));
+  background: linear-gradient(to right, #56b4d3e7, #348f4fe3);
+  padding: 1rem;
+  font-family: "Changa", sans-serif;
+  color: #ddf1e0;
+}
+
+.contacto .contacto__titulo {
+  font-size: 3.5rem;
+  padding: 1rem;
+  text-align: start;
+}
+
+.contacto article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacto article img {
+  width: 50rem;
+  margin: 0.5rem;
+}
+
+.contacto article .contacto__formulario {
+  border: 0.3rem solid #5c855c;
+  background-color: rgba(123, 209, 66, 0.075);
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contacto article .contacto__formulario input {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.contacto article .contacto__formulario .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem;
+}
+
+.contacto article .contacto__formulario .contacto__formulario__botones input {
+  width: 32%;
+  background-color: #5c855c;
+  border-radius: 150px;
+  color: white;
+  font-family: "Changa", sans-serif;
+}
+
+.contacto__formulario__botones input:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+@media (max-width: 768px) {
+  .seccionCentral {
+    border: solid red;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "variedad variedad" "dato noticias" "podio podio";
+  }
+  .seccionCentral .noticias h2 {
+    font-size: 3rem;
+  }
+  .seccionCentral .noticias button {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
