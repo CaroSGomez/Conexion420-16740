@@ -220,6 +220,7 @@ footer .footer__redes img {
   height: 100%;
   padding: 3rem;
   border-radius: 5rem;
+  margin: 0.5rem;
 }
 
 .seccionCentral .segundaSeccion .podio img {
@@ -582,8 +583,10 @@ footer .footer__redes img {
 }
 
 @media (max-width: 768px) {
+  #opcionesMenu li {
+    font-size: 3rem;
+  }
   .seccionCentral {
-    border: solid red;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -596,7 +599,201 @@ footer .footer__redes img {
     font-size: 3rem;
   }
   .seccionCentral .noticias button {
+    font-size: 1.8rem;
+  }
+  .seccionCentral .segundaSeccion .podio {
+    padding: 2rem;
+  }
+  .instructivo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .instructivo .instructivo__manual {
+    text-align: center;
+  }
+  .instructivo .instructivo__opciones {
+    margin: 1rem;
+  }
+  .primerseccion p {
+    font-size: 1.3rem;
+  }
+  .investigaciones h3 {
+    font-size: 2.5rem;
+  }
+  .investigaciones article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .investigaciones article img {
+    width: 35rem;
+  }
+  .investigaciones article p {
+    font-size: 1rem;
+  }
+  .productos article {
+    padding: 3rem;
+    width: 20rem;
+    height: 30rem;
+  }
+  .productos article h2 {
+    font-size: 1.3rem;
+  }
+  .contacto article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacto article img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 368px) {
+  #opcionesMenu li {
+    font-size: 2.5rem;
+  }
+  .menu div img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .carrousel img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .seccionCentral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seccionCentral .primerSeccion h5 {
+    font-size: 2.5rem;
+  }
+  .seccionCentral .primerSeccion img:hover {
+    width: 20rem;
+  }
+  .seccionCentral .primerSeccion .primerSeccion__lista ul {
+    padding-right: 2rem;
+  }
+  .seccionCentral .primerSeccion .primerSeccion__lista ul li {
+    font-size: 1.2rem;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.3rem;
+  }
+  footer .logo {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer__redes {
+    text-align: center;
+    padding-right: 2rem;
+  }
+  .instructivo .instructivo__manual h1 {
+    font-size: 2.3rem;
+    padding-right: 1rem;
+  }
+  .instructivo .instructivo__manual img {
+    width: 15rem;
+    margin: 0;
+  }
+  .instructivo .instructivo__opciones {
+    padding: 0;
+    margin: 0;
+  }
+  .instructivo .instructivo__opciones li {
+    width: 100%;
+  }
+  .instructivo .instructivo__opciones li a {
+    font-size: 1.4rem;
+  }
+  .primerseccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .primerseccion article p {
     font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .primerseccion article img {
+    height: 20rem;
+  }
+  .investigaciones article img {
+    width: 100%;
+  }
+  .investigaciones .video {
+    height: 20rem;
+    width: 20rem;
+  }
+  .contacto .contacto__titulo {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .contacto .contacto__formulario label {
+    font-size: 1rem;
+  }
+  .contacto .contacto__formulario .contacto__formulario__botones {
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

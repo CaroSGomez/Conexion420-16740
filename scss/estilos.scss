@@ -6,24 +6,197 @@
 @import "tienda";
 @import "contacto";
 
-
 @media (max-width: 768px) {
-  .seccionCentral{
-    border: solid red;
+  #opcionesMenu li {
+    font-size: 3rem;
+  }
+  .seccionCentral {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "variedad variedad"
-    "dato noticias" "podio podio";
-    .noticias{
-      h2{
-
-        font-size:3rem ;
+    grid-template-areas:
+      "variedad variedad"
+      "dato noticias" "podio podio";
+    .noticias {
+      h2 {
+        font-size: 3rem;
       }
-      button{
-        font-size: 2rem;
+      button {
+        font-size: 1.8rem;
       }
     }
+    .segundaSeccion {
+      .podio {
+        padding: 2rem;
+      }
+    }
+  }
+  .instructivo {
+    display: flex;
+    flex-direction: column;
+    .instructivo__manual {
+      text-align: center;
+    }
+
+    .instructivo__opciones {
+      margin: 1rem;
+    }
+  }
+  .primerseccion {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .investigaciones {
+    h3 {
+      font-size: 2.5rem;
+    }
+    article {
+      img {
+        width: 35rem;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .productos article {
+    h2 {
+      font-size: 1.3rem;
+    }
+    padding: 3rem;
+    width: 20rem;
+    height: 30rem;
+  }
+  .contacto article {
+    img {
+      width: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 368px) {
+  #opcionesMenu li {
+    font-size: 2.5rem;
+  }
+  .menu div img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .carrousel img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .seccionCentral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .primerSeccion {
+      h5 {
+        font-size: 2.5rem;
+      }
+      img:hover {
+        width: 20rem;
+      }
+      .primerSeccion__lista ul {
+        padding-right: 2rem;
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    .logo {
+      width: 6rem;
+      height: 6rem;
+      margin-bottom: 1.5rem;
+    }
+    .footer__redes {
+      text-align: center;
+      padding-right: 2rem;
+    }
+  }
+  .instructivo {
+    .instructivo__manual {
+      h1 {
+        font-size: 2.3rem;
+        padding-right: 1rem;
+      }
+      img {
+        width: 15rem;
+        margin: 0;
+      }
+    }
+    .instructivo__opciones {
+      padding: 0;
+      margin: 0;
+      li {
+        width: 100%;
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .primerseccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    article {
+      p {
+        font-size: 2rem;
+        padding: 0.5rem;
+      }
+      img {
+        height: 20rem;
+      }
+    }
+  }
+  .investigaciones {
+    article {
+      img {
+        width: 100%;
+      }
+    }
+    .video {
+      height: 20rem;
+      width: 20rem;
+    }
+  }
+  .contacto{
+      .contacto__titulo{
+          text-align: center;
+          font-size: 2.5rem;
+    }
+
+    .contacto__formulario{
+        label{
+            font-size: 1rem;
+        }
+        .contacto__formulario__botones{
+            font-size: 0.9rem;
+
+
+        }
+
+    } 
   }
   
 }
