@@ -1,0 +1,23 @@
+[33mf5bb13e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m Agrego @media max-width: 368px y 768px para todos los html
+[33m1c07b03[m[33m ([m[1;31morigin/master[m[33m)[m Creo carpeta de sass con todos los archivos
+[33m89a9dad[m Corrijo error
+[33mf85bb2a[m Agrego estilos en primer seccion de cannabisMedicinal.html
+[33m9576972[m Agrego info y links a secciones del guias.html
+[33m768c353[m Termino de agregar componentes al index y doy estilo
+[33m1592a39[m Agrego componentes con Bootstrap y doy estilo
+[33m5d21132[m corrijo estilos
+[33m301052a[m Agrego cards en html guias y doy estilo
+[33m81d78a0[m Merge branch 'estilos'
+[33m168e123[m[33m ([m[1;32mestilos[m[33m)[m Doy estilos a titulos de cards
+[33m6476978[m Hago merge con master
+[33m7cc7908[m Agrego card en html guias y doy estilo
+[33m07eb058[m Agrego navbar de bootstrap en todos los html y carrousel en index
+[33m5bf3cf9[m Merge branch 'estilos'
+[33md1863a1[m Agrego animaciones a titulos
+[33mcce9b2b[m Creacion de README
+[33mea5ee22[m Agrego links de los grows del podio
+[33me277e68[m Agrego logo a todas los html
+[33mc33fb91[m[33m ([m[1;32mindex[m[33m)[m Se agrego info en la seccion podios
+[33m93b4b8c[m Se da estilo a seccion dato
+[33m7277341[m[33m ([m[1;32mcheckout[m[33m)[m Agrego logo en header y footer
+[33mf302018[m Primer repositorio

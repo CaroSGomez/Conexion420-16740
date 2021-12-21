@@ -462,10 +462,19 @@ footer .footer__redes img {
   margin: 1rem;
 }
 
+.investigaciones article img {
+  width: 30rem;
+}
+
 .investigaciones h2 {
   font-size: 2.5rem;
   text-decoration: underline;
   margin: 1rem;
+}
+
+.investigaciones div iframe {
+  width: 50rem;
+  height: 30rem;
 }
 
 .productos {
@@ -674,7 +683,7 @@ footer .footer__redes img {
   }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 370px) {
   #opcionesMenu li {
     font-size: 2.5rem;
   }

@@ -15,6 +15,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
@@ -58,21 +60,21 @@
       </nav>
     </header>
     <section class="primerseccion">
-      <article class="primerseccion__cbd">
+      <article class="primerseccion__cbd" data-aos="flip-left">
         <p>Marihuana y CBD</p>
         <img
           src="../multimedia/imagenes/marihuana-medicinal.jpg"
           alt="marihuana-medicinal"
         />
       </article>
-      <article class="primerseccion__noticias">
+      <article class="primerseccion__noticias" data-aos="flip-left">
         <p>Ultimas Noticias</p>
         <img
           src="../multimedia/imagenes/Argentina. la marcha mundial de la marihuana se hizo por redes.jpg"
           alt=""
         />
       </article>
-      <article class="primerseccion__recetas">
+      <article class="primerseccion__recetas" data-aos="flip-left">
         <p>Tratamientos y recetas</p>
         <img src="../multimedia/imagenes/cannabis-89c2cf.jpg" alt="" />
       </article>
@@ -81,7 +83,7 @@
       <h3>¿Cuánto sabes sobre cannabis medicinal?</h3>
       <article>
         <img src="../multimedia/imagenes/imagen1.PNG"
-          alt="aceite de cannabis"/>
+          alt="aceite de cannabis" data-aos="zoom-out-up"/>
         <p>
           La planta de cannabis se utilizó por miles de años en distintas
           culturas alrededor del mundo para distintos fines, entre ellos, la
@@ -160,5 +162,9 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
