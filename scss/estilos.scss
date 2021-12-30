@@ -1,4 +1,5 @@
 @import "fuentes";
+@import "variables";
 @import "generales";
 @import "index";
 @import "guias";
@@ -26,6 +27,9 @@
       }
     }
     .segundaSeccion {
+      h2 {
+        font-size: 2.5rem;
+      }
       .podio {
         padding: 2rem;
       }
@@ -63,6 +67,10 @@
         font-size: 1rem;
       }
     }
+    .video {
+      height: 25rem;
+      width: 40rem;
+    }
   }
 
   .productos article {
@@ -84,17 +92,17 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 368px) {
   #opcionesMenu li {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .menu div img {
     width: 8rem;
     height: 8rem;
   }
   .carrousel img {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
   }
   .seccionCentral {
     display: flex;
@@ -103,7 +111,7 @@
     justify-content: center;
     .primerSeccion {
       h5 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
       img:hover {
         width: 20rem;
@@ -111,8 +119,22 @@
       .primerSeccion__lista ul {
         padding-right: 2rem;
         li {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
+      }
+      .primerSeccion__elegida p {
+        font-size: 1rem;
+      }
+    }
+    .segundaSeccion h2 {
+      font-size: 1.8rem;
+    }
+    .noticias {
+      h2 {
+        font-size: 2rem;
+      }
+      button {
+        font-size: 1.5rem;
       }
     }
   }
@@ -161,7 +183,7 @@
     align-items: center;
     article {
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0.5rem;
       }
       img {
@@ -180,23 +202,19 @@
       width: 20rem;
     }
   }
-  .contacto{
-      .contacto__titulo{
-          text-align: center;
-          font-size: 2.5rem;
+  .contacto {
+    .contacto__titulo {
+      text-align: center;
+      font-size: 2.5rem;
     }
 
-    .contacto__formulario{
-        label{
-            font-size: 1rem;
-        }
-        .contacto__formulario__botones{
-            font-size: 0.9rem;
-
-
-        }
-
-    } 
+    .contacto__formulario {
+      label {
+        font-size: 1rem;
+      }
+      .contacto__formulario__botones {
+        font-size: 0.9rem;
+      }
+    }
   }
-  
 }

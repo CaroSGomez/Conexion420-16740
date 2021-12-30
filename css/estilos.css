@@ -9,6 +9,34 @@ font-family: 'Neucha', cursive;
 font-family: 'Rampart One', cursive;
 font-family: 'Architects Daughter', cursive;
 font-family: 'Quicksand', sans-serif;*/
+.titulo__h1 {
+  font-size: 4rem;
+}
+
+.titulo__h2 {
+  font-size: 3rem;
+}
+
+.titulo__h3 {
+  font-size: 2rem;
+}
+
+.box__style, .box__style--dark {
+  border: 0.3rem solid #5c855c;
+}
+
+.box__style--dark {
+  background-color: rgba(123, 209, 66, 0.336);
+  padding: 2rem;
+}
+
+.btn--form {
+  background-color: #5c855c;
+  border-radius: 150px;
+  color: white;
+  width: 32%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -161,7 +189,6 @@ footer .footer__redes img {
   font-family: "Changa", sans-serif;
   color: #5c855c;
   text-decoration: underline;
-  font-size: 4rem;
 }
 
 .seccionCentral .primerSeccion img {
@@ -189,7 +216,6 @@ footer .footer__redes img {
 }
 
 .seccionCentral .primerSeccion .primerSeccion__lista h2 {
-  font-size: 2rem;
   text-decoration: underline;
 }
 
@@ -200,7 +226,6 @@ footer .footer__redes img {
 }
 
 .seccionCentral .segundaSeccion {
-  border: 0.3rem solid #5c855c;
   text-align: center;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -209,7 +234,6 @@ footer .footer__redes img {
 
 .seccionCentral .segundaSeccion h2 {
   font-family: "Rampart One", cursive;
-  font-size: 3rem;
   color: #5c855c;
 }
 
@@ -239,7 +263,6 @@ footer .footer__redes img {
 }
 
 .seccionCentral .noticias {
-  border: 0.3rem solid #5c855c;
   padding: 1rem;
   font-family: "Architects Daughter", cursive;
   color: #5c855c;
@@ -249,7 +272,6 @@ footer .footer__redes img {
 }
 
 .seccionCentral .noticias h2 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -283,7 +305,6 @@ footer .footer__redes img {
 }
 
 .seccionCentral .dato h3 {
-  font-size: 3rem;
   background-color: #f1fff0;
   padding: 0.5rem;
 }
@@ -321,7 +342,6 @@ footer .footer__redes img {
 }
 
 .instructivo .instructivo__manual h1 {
-  font-size: 3rem;
   text-decoration: underline;
 }
 
@@ -445,7 +465,6 @@ footer .footer__redes img {
 }
 
 .investigaciones h3 {
-  font-size: 3rem;
   text-decoration: underline;
 }
 
@@ -467,7 +486,6 @@ footer .footer__redes img {
 }
 
 .investigaciones h2 {
-  font-size: 2.5rem;
   text-decoration: underline;
   margin: 1rem;
 }
@@ -479,7 +497,6 @@ footer .footer__redes img {
 
 .productos {
   font-family: "Rampart One", cursive;
-  font-size: 1.3rem;
   color: #5c855c;
   padding: 1rem;
   background-color: rgba(123, 209, 66, 0.336);
@@ -522,15 +539,14 @@ footer .footer__redes img {
 }
 
 .contacto {
-  background: -webkit-gradient(linear, left top, right top, from(#56b4d3e7), to(#348f4fe3));
-  background: linear-gradient(to right, #56b4d3e7, #348f4fe3);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(123, 209, 66, 0.493)), color-stop(ivory), color-stop(rgba(123, 209, 66, 0.493)), to(ivory));
+  background: linear-gradient(to left, rgba(123, 209, 66, 0.493), ivory, rgba(123, 209, 66, 0.493), ivory);
   padding: 1rem;
   font-family: "Changa", sans-serif;
-  color: #ddf1e0;
+  color: #5c855c;
 }
 
 .contacto .contacto__titulo {
-  font-size: 3.5rem;
   padding: 1rem;
   text-align: start;
 }
@@ -563,7 +579,6 @@ footer .footer__redes img {
 }
 
 .contacto article .contacto__formulario input {
-  width: 100%;
   height: 1.5rem;
 }
 
@@ -577,14 +592,6 @@ footer .footer__redes img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 1rem;
-}
-
-.contacto article .contacto__formulario .contacto__formulario__botones input {
-  width: 32%;
-  background-color: #5c855c;
-  border-radius: 150px;
-  color: white;
-  font-family: "Changa", sans-serif;
 }
 
 .contacto__formulario__botones input:hover {
@@ -609,6 +616,9 @@ footer .footer__redes img {
   }
   .seccionCentral .noticias button {
     font-size: 1.8rem;
+  }
+  .seccionCentral .segundaSeccion h2 {
+    font-size: 2.5rem;
   }
   .seccionCentral .segundaSeccion .podio {
     padding: 2rem;
@@ -655,6 +665,10 @@ footer .footer__redes img {
   .investigaciones article p {
     font-size: 1rem;
   }
+  .investigaciones .video {
+    height: 25rem;
+    width: 40rem;
+  }
   .productos article {
     padding: 3rem;
     width: 20rem;
@@ -683,17 +697,17 @@ footer .footer__redes img {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 368px) {
   #opcionesMenu li {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .menu div img {
     width: 8rem;
     height: 8rem;
   }
   .carrousel img {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
   }
   .seccionCentral {
     display: -webkit-box;
@@ -711,7 +725,7 @@ footer .footer__redes img {
             justify-content: center;
   }
   .seccionCentral .primerSeccion h5 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .seccionCentral .primerSeccion img:hover {
     width: 20rem;
@@ -720,7 +734,19 @@ footer .footer__redes img {
     padding-right: 2rem;
   }
   .seccionCentral .primerSeccion .primerSeccion__lista ul li {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .seccionCentral .primerSeccion .primerSeccion__elegida p {
+    font-size: 1rem;
+  }
+  .seccionCentral .segundaSeccion h2 {
+    font-size: 1.8rem;
+  }
+  .seccionCentral .noticias h2 {
+    font-size: 2rem;
+  }
+  .seccionCentral .noticias button {
+    font-size: 1.5rem;
   }
   footer {
     display: -webkit-box;
@@ -781,7 +807,7 @@ footer .footer__redes img {
             align-items: center;
   }
   .primerseccion article p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
   }
   .primerseccion article img {

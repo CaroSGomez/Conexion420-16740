@@ -1,0 +1,29 @@
+$titulares: (
+  h1: 4rem,
+  h2: 3rem,
+  h3: 2rem,
+);
+@each $titulo, $size in $titulares {
+  .titulo__#{$titulo} {
+    font-size: $size;
+  }
+}
+
+.box__style{
+    border: 0.3rem solid #5c855c;
+}
+.box__style--dark{
+    @extend .box__style;
+    background-color: rgba(123, 209, 66, 0.336);
+    padding: 2rem;
+}
+
+@mixin btn {
+    background-color: #5c855c;
+        border-radius: 150px;
+        color: white;
+}
+.btn--form{
+    @include btn;
+    width: 32%;
+    }
