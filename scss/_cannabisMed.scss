@@ -7,7 +7,14 @@
   grid-template-rows: 1fr;
   gap: 0.8rem;
   grid-template-areas: "cbd noticias recetas";
-  background-color: rgba(123, 209, 66, 0.336);
+  background-image: linear-gradient(
+    to right top,
+    #c9ead0,
+    #bdebc5,
+    #b1edba,
+    #a5edae,
+    #9aeea1
+  );
   img {
     width: 100%;
     height: 80%;
@@ -55,19 +62,22 @@
   background-color: #f1fff0;
   padding: 1rem;
   border: 0.5rem double #4f991e;
+  width: 100%;
   h3 {
     text-decoration: underline;
   }
   article {
     display: flex;
+    align-items: center;
     padding: 1rem;
     p {
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 1rem;
     }
-    img {
-      width: 30rem;
+    img{
+      height: 20rem;
+      width: 20rem;
     }
   }
   h2 {

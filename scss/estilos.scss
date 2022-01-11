@@ -197,9 +197,15 @@
         width: 100%;
       }
     }
-    .video {
-      height: 20rem;
-      width: 20rem;
+    .box__style--dark {
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+      iframe {
+        width: 15rem;
+        height: 10rem;
+      }
     }
   }
   .contacto {

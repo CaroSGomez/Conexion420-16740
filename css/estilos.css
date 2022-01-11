@@ -163,13 +163,14 @@ footer .footer__redes img {
 }
 
 .seccionCentral {
+  margin: 0.8rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  gap: 0.5rem;
+  gap: 1rem;
       grid-template-areas: "variedad noticias" "podio dato";
 }
 
@@ -278,7 +279,8 @@ footer .footer__redes img {
 .seccionCentral .noticias button {
   font-size: 2.5rem;
   color: #5c855c;
-  background-color: rgba(123, 209, 66, 0.336) !important;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1)) !important;
+  background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1) !important;
 }
 
 .seccionCentral .noticias .noticias__info {
@@ -295,7 +297,8 @@ footer .footer__redes img {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: dato;
-  background-color: rgba(123, 209, 66, 0.336);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1));
+  background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1);
   text-align: center;
   padding: 1.5rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -333,11 +336,12 @@ footer .footer__redes img {
 .instructivo {
   color: #5c855c;
   font-family: "Changa", sans-serif;
-  background-color: #f1fff0;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(123, 209, 66, 0.493)), color-stop(ivory), color-stop(rgba(123, 209, 66, 0.493)), to(ivory));
+  background: linear-gradient(to left, rgba(123, 209, 66, 0.493), ivory, rgba(123, 209, 66, 0.493), ivory);
   border: 0.5rem double #4f991e;
 }
 
@@ -379,8 +383,7 @@ footer .footer__redes img {
   margin-bottom: 1rem;
   padding: 1rem;
   font-weight: bold;
-  background-image: url(https://previews.123rf.com/images/julydfg/julydfg1211/julydfg121100093/16529053-verde-marihuana-hojas-de-fondo-vector-ilustraci%C3%B3n-.jpg);
-  background-position: center;
+  background-color: #f1fff0;
 }
 
 .secciones .opcionManual button {
@@ -388,8 +391,9 @@ footer .footer__redes img {
 }
 
 .secciones .card-header.titulo {
-  background-color: rgba(123, 209, 66, 0.336);
+  background-color: rgba(123, 209, 66, 0.541);
   color: #447444;
+  font-family: "Changa", sans-serif;
 }
 
 .primerseccion {
@@ -404,7 +408,8 @@ footer .footer__redes img {
       grid-template-rows: 1fr;
   gap: 0.8rem;
       grid-template-areas: "cbd noticias recetas";
-  background-color: rgba(123, 209, 66, 0.336);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1));
+  background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1);
 }
 
 .primerseccion img {
@@ -462,6 +467,7 @@ footer .footer__redes img {
   background-color: #f1fff0;
   padding: 1rem;
   border: 0.5rem double #4f991e;
+  width: 100%;
 }
 
 .investigaciones h3 {
@@ -472,17 +478,21 @@ footer .footer__redes img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
 }
 
 .investigaciones article p {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 1rem;
 }
 
 .investigaciones article img {
-  width: 30rem;
+  height: 20rem;
+  width: 20rem;
 }
 
 .investigaciones h2 {
@@ -499,7 +509,8 @@ footer .footer__redes img {
   font-family: "Rampart One", cursive;
   color: #5c855c;
   padding: 1rem;
-  background-color: rgba(123, 209, 66, 0.336);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(123, 209, 66, 0.493)), color-stop(ivory), color-stop(rgba(123, 209, 66, 0.493)), to(ivory));
+  background: linear-gradient(to left, rgba(123, 209, 66, 0.493), ivory, rgba(123, 209, 66, 0.493), ivory);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,13 +545,13 @@ footer .footer__redes img {
 }
 
 .productos article:hover {
-  background-color: rgba(110, 161, 76, 0.205);
+  background-color: rgba(110, 161, 76, 0.425);
   color: white;
 }
 
 .contacto {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(123, 209, 66, 0.493)), color-stop(ivory), color-stop(rgba(123, 209, 66, 0.493)), to(ivory));
-  background: linear-gradient(to left, rgba(123, 209, 66, 0.493), ivory, rgba(123, 209, 66, 0.493), ivory);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1));
+  background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1);
   padding: 1rem;
   font-family: "Changa", sans-serif;
   color: #5c855c;
@@ -816,9 +827,13 @@ footer .footer__redes img {
   .investigaciones article img {
     width: 100%;
   }
-  .investigaciones .video {
-    height: 20rem;
-    width: 20rem;
+  .investigaciones .box__style--dark h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .investigaciones .box__style--dark iframe {
+    width: 15rem;
+    height: 10rem;
   }
   .contacto .contacto__titulo {
     text-align: center;

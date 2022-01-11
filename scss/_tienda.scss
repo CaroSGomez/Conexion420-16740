@@ -2,7 +2,13 @@
   font-family: "Rampart One", cursive;
   color: #5c855c;
   padding: 1rem;
-  background-color: rgba(123, 209, 66, 0.336);
+  background: linear-gradient(
+    to left,
+    rgba(123, 209, 66, 0.493),
+    ivory,
+    rgba(123, 209, 66, 0.493),
+    ivory
+  );
   display: flex;
   flex-wrap: wrap;
   article {
@@ -31,6 +37,6 @@
 }
 
 .productos article:hover {
-  background-color: rgba(110, 161, 76, 0.205);
+  background-color: rgba(110, 161, 76, 0.425);
   color: white;
 }

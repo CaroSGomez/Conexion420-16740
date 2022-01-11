@@ -10,10 +10,11 @@
 }
 
 .seccionCentral {
+  margin: 0.8rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
-  gap: 0.5rem;
+  gap: 1rem;
   grid-template-areas:
     "variedad noticias"
     "podio dato";
@@ -100,7 +101,14 @@
     button {
       font-size: 2.5rem;
       color: #5c855c;
-      background-color: rgba(123, 209, 66, 0.336) !important;
+      background-image: linear-gradient(
+        to right top,
+        #c9ead0,
+        #bdebc5,
+        #b1edba,
+        #a5edae,
+        #9aeea1
+      ) !important;
     }
     .noticias__info {
       font-size: 1rem;
@@ -114,7 +122,14 @@
 
   .dato {
     grid-area: dato;
-    background-color: rgba(123, 209, 66, 0.336);
+    background-image: linear-gradient(
+    to right top,
+    #c9ead0,
+    #bdebc5,
+    #b1edba,
+    #a5edae,
+    #9aeea1
+  );
     text-align: center;
     padding: 1.5rem;
     font-family: "Yanone Kaffeesatz", sans-serif;
