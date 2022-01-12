@@ -357,7 +357,7 @@ footer .footer__redes img {
 .instructivo .instructivo__opciones {
   list-style-type: none;
   text-align: start;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-style: italic;
   margin: 6rem 5rem;
 }
@@ -396,68 +396,33 @@ footer .footer__redes img {
   font-family: "Changa", sans-serif;
 }
 
-.primerseccion {
-  width: 100%;
-  height: 100%;
+.seccionUno {
   padding: 1rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 0.8rem;
-      grid-template-areas: "cbd noticias recetas";
+  text-align: center;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1));
   background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1);
 }
 
-.primerseccion img {
-  width: 100%;
-  height: 80%;
-  padding: 1rem;
-  border-radius: 15%;
+.seccionUno .seccionUno__opciones {
+  border: 0.3rem solid #5c855c !important;
+  border-radius: 10% !important;
+  background-color: #ddffdd;
+  padding: 1.5rem;
+  margin: 1rem;
 }
 
-.primerseccion p {
-  font-size: 2.3rem;
+.seccionUno .seccionUno__opciones h5 {
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
   text-decoration: underline;
   color: #5c855c;
 }
 
-.primerseccion .primerseccion__cbd {
-  width: 100%;
-  height: 100%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: cbd;
-  border: 0.3rem solid #5c855c;
-  border-radius: 10%;
-  background-color: #ddffdd;
-}
-
-.primerseccion .primerseccion__noticias {
-  width: 100%;
-  height: 100%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: noticias;
-  border: 0.3rem solid #5c855c;
-  border-radius: 10%;
-  background-color: #ddffdd;
-}
-
-.primerseccion .primerseccion__recetas {
-  width: 100%;
-  height: 100%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: recetas;
-  border: 0.3rem solid #5c855c;
-  border-radius: 10%;
-  background-color: #ddffdd;
+.seccionUno .seccionUno__opciones img {
+  margin-top: 1.5rem;
+  border-radius: 15%;
+  height: 20rem;
 }
 
 .investigaciones {
@@ -474,7 +439,7 @@ footer .footer__redes img {
   text-decoration: underline;
 }
 
-.investigaciones article {
+.investigaciones .investigaciones__aceite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,25 +449,33 @@ footer .footer__redes img {
   padding: 1rem;
 }
 
-.investigaciones article p {
+.investigaciones .investigaciones__aceite p {
   font-style: italic;
   font-size: 1rem;
   margin: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
-.investigaciones article img {
-  height: 20rem;
-  width: 20rem;
+.investigaciones .investigaciones__aceite img {
+  width: 100%;
+  margin: 1rem;
 }
 
 .investigaciones h2 {
   text-decoration: underline;
   margin: 1rem;
+  color: #5c855c;
+  background-color: #f1fff081;
 }
 
-.investigaciones div iframe {
-  width: 50rem;
-  height: 30rem;
+.investigaciones .investigaciones__documental {
+  background-image: url(../multimedia/imagenes/4720828.jpg);
+}
+
+.investigaciones .investigaciones__documental iframe {
+  width: 80%;
+  height: 25rem;
 }
 
 .productos {
