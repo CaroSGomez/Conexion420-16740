@@ -1,7 +1,6 @@
 .productos {
   font-family: "Rampart One", cursive;
   color: #5c855c;
-  padding: 1rem;
   background: linear-gradient(
     to left,
     rgba(123, 209, 66, 0.493),
@@ -11,6 +10,9 @@
   );
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
   article {
     background-color: ivory;
     margin: 1rem;
@@ -40,3 +42,4 @@
   background-color: rgba(110, 161, 76, 0.425);
   color: white;
 }
+

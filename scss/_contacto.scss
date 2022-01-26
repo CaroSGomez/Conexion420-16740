@@ -16,11 +16,14 @@
   }
   article {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
     img {
-      width: 50rem;
+      width: 45rem;
       margin: 0.5rem;
     }
     .contacto__formulario {
+      width: 50%;
       border: 0.3rem solid #5c855c;
       background-color: rgba(123, 209, 66, 0.075);
       font-size: 1rem;
@@ -28,7 +31,6 @@
       margin: 0.5rem;
       display: flex;
       flex-direction: column;
-      width: 100%;
       input {
         height: 1.5rem;
       }
