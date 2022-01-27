@@ -234,12 +234,17 @@
       font-size: 2.5rem;
     }
 
-    .contacto__formulario {
-      label {
-        font-size: 1rem;
-      }
-      .contacto__formulario__botones {
-        font-size: 0.9rem;
+    article {
+
+      .contacto__formulario{
+        
+        width: 100%;
+        label {
+          font-size: 1rem;
+        }
+        .contacto__formulario__botones {
+          font-size: 0.9rem;
+        }
       }
     }
   }

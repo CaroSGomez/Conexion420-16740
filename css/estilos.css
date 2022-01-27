@@ -838,10 +838,13 @@ footer .footer__redes ul li a img {
     text-align: center;
     font-size: 2.5rem;
   }
-  .contacto .contacto__formulario label {
+  .contacto article .contacto__formulario {
+    width: 100%;
+  }
+  .contacto article .contacto__formulario label {
     font-size: 1rem;
   }
-  .contacto .contacto__formulario .contacto__formulario__botones {
+  .contacto article .contacto__formulario .contacto__formulario__botones {
     font-size: 0.9rem;
   }
 }
