@@ -708,17 +708,18 @@ footer .footer__redes ul li a img {
 
 @media (max-width: 576px) {
   #opcionesMenu li {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .menu div img {
     width: 6rem;
     height: 6rem;
   }
   .carrousel img {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
   }
   .seccionCentral {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -748,8 +749,26 @@ footer .footer__redes ul li a img {
   .seccionCentral .primerSeccion .primerSeccion__elegida p {
     font-size: 1rem;
   }
+  .seccionCentral .segundaSeccion {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .seccionCentral .segundaSeccion h2 {
-    font-size: 1.8rem;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .seccionCentral .segundaSeccion .podio {
+    margin-top: 1rem;
+    width: 18rem;
   }
   .seccionCentral .noticias h2 {
     font-size: 2.1rem;

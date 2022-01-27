@@ -105,7 +105,7 @@
 
 @media (max-width: 576px) {
   #opcionesMenu li {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .menu div {
     img {
@@ -114,10 +114,11 @@
     }
   }
   .carrousel img {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
   }
   .seccionCentral {
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,18 +140,31 @@
         font-size: 1rem;
       }
     }
-    .segundaSeccion h2 {
-      font-size: 1.8rem;
+    .segundaSeccion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      text-align: center;
+      font-size: 2.3rem;
     }
-    .noticias {
-      h2 {
-        font-size: 2.1rem;
+    .podio {
+        margin-top: 1rem;
+        width: 18rem;
+        
       }
-      button {
-        font-size: 1.3rem;
-      }
-      .noticias__info {
-        font-size: 1rem;
+
+    }
+      .noticias {
+        h2 {
+          font-size: 2.1rem;
+        }
+        button {
+          font-size: 1.3rem;
+        }
+        .noticias__info {
+          font-size: 1rem;
       }
     }
   }
