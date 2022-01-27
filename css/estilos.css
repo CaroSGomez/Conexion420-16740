@@ -706,7 +706,7 @@ footer .footer__redes ul li a img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   #opcionesMenu li {
     font-size: 1.5rem;
   }
