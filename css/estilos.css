@@ -706,17 +706,17 @@ footer .footer__redes ul li a img {
   }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 375px) {
   #opcionesMenu li {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .menu div img {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
   }
   .carrousel img {
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
   }
   .seccionCentral {
     display: -webkit-box;
@@ -737,7 +737,7 @@ footer .footer__redes ul li a img {
     font-size: 1.8rem;
   }
   .seccionCentral .primerSeccion img:hover {
-    width: 20rem;
+    width: 18rem;
   }
   .seccionCentral .primerSeccion .primerSeccion__lista ul {
     padding-right: 2rem;
@@ -752,10 +752,13 @@ footer .footer__redes ul li a img {
     font-size: 1.8rem;
   }
   .seccionCentral .noticias h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .seccionCentral .noticias button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .seccionCentral .noticias .noticias__info {
+    font-size: 1rem;
   }
   footer {
     display: -webkit-box;
@@ -765,13 +768,20 @@ footer .footer__redes ul li a img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 1rem;
   }
   footer img {
     padding: 1.5rem;
-    width: 12rem;
+    width: 9rem;
+  }
+  footer .footer__redes h3 {
+    font-size: 1.2rem;
+  }
+  footer .footer__redes ul {
+    padding: 0;
   }
   footer .footer__redes ul li a img {
-    padding: 1rem;
+    width: 3rem;
   }
   .instructivo .instructivo__manual h1 {
     font-size: 2.3rem;
