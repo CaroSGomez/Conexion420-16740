@@ -10,11 +10,11 @@
 }
 
 .seccionCentral {
-  margin: 0.3rem;
+  padding: 0.5rem;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 63% 35%;
+  grid-template-columns: 60% auto;
   grid-template-rows: auto auto;
   gap: 1rem;
   grid-template-areas:
@@ -54,42 +54,66 @@
       h2 {
         text-decoration: underline;
       }
-      ul li {
-        font-size: 1.5rem;
-        list-style-type: none;
-        background-color: rgba(123, 209, 66, 0.151);
+      ul {
+        padding: 0;
+        li {
+          font-size: 1.5rem;
+          list-style-type: none;
+          background-color: rgba(123, 209, 66, 0.151);
+        }
       }
     }
   }
   .segundaSeccion {
     text-align: center;
     grid-area: podio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     h2 {
       font-family: "Rampart One", cursive;
       color: #5c855c;
     }
-    .podio {
-      background-color: rgba(20, 121, 20, 0.055);
-      border: dotted 0.3rem #5c855c;
+    div{
       width: 100%;
-      height: 100%;
-      padding: 3rem;
-      border-radius: 5rem;
-      margin: 0.5rem;
-      img {
-        height: 10rem;
+      padding: 1rem;
+      :hover{
+        background-color: rgba(110, 161, 76, 0.425);
       }
-      .visitar {
-        text-decoration: none;
-        background-color: #5c855c;
-        border-radius: 150px;
-        color: white;
-        font-family: "Rampart One", cursive;
-        font-size: 1rem;
-        margin: 1rem;
-        padding: 1rem;
+    }     
+     
+       .podio {
+        background-color: rgba(20, 121, 20, 0.055);
+        border: dotted 0.3rem #5c855c;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.3rem;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+       
+        img {
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          
+        }
+        .visitar {
+          margin: 2rem;
+          text-decoration: none;
+          background-color: #5c855c;
+          border-radius: 150px;
+          color: white;
+          font-family: "Rampart One", cursive;
+          font-size: 1rem;
+          padding: 0.5rem;
+          padding: 1rem;
+        }
       }
-    }
   }
 
   .noticias {
@@ -119,19 +143,24 @@
         color: #5c855c;
         text-decoration: none;
       }
+      a:hover{
+        border-radius: 150px;
+        border: #5c855c solid;
+        padding: 0.2rem;
+             }
     }
   }
 
   .dato {
     grid-area: dato;
     background-image: linear-gradient(
-    to right top,
-    #c9ead0,
-    #bdebc5,
-    #b1edba,
-    #a5edae,
-    #9aeea1
-  );
+      to right top,
+      #c9ead0,
+      #bdebc5,
+      #b1edba,
+      #a5edae,
+      #9aeea1
+    );
     text-align: center;
     padding: 1.5rem;
     font-family: "Yanone Kaffeesatz", sans-serif;
@@ -148,7 +177,7 @@
       padding: 0.5rem;
     }
     p {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       padding: 0.5rem;
       background-color: #f1fff0;
     }

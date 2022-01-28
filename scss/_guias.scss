@@ -1,8 +1,9 @@
 .instructivo {
   color: #5c855c;
   font-family: "Changa", sans-serif;
-  padding: 1rem;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   background: linear-gradient(
     to left,
     rgba(123, 209, 66, 0.493),
@@ -11,23 +12,27 @@
     ivory
   );
   border: 0.5rem double #4f991e;
+  padding: 1rem;
   .instructivo__manual {
+    padding: 1rem;
+    text-align: center;
     h1 {
       text-decoration: underline;
+      text-align: center;
+      font-size: 3.5rem;
     }
     img {
-      margin: 2rem 5rem;
       width: 20rem;
     }
   }
   .instructivo__opciones {
+    padding: 1rem;
     list-style-type: none;
     text-align: start;
     font-size: 2.3rem;
     font-style: italic;
-    margin: 6rem 5rem;
     li {
-      margin: 1rem;
+      margin: 2rem;
       a {
         text-decoration: none;
         color: #5c855c;

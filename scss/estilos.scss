@@ -8,17 +8,23 @@
 @import "contacto";
 
 @media (max-width: 768px) {
+  /*menu*/
   #opcionesMenu li {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+  /*index*/
   .seccionCentral {
+    width: 100%;
+    padding: 0;
     display: grid;
-    grid-template-rows: auto 35% auto;
-    gap: 0.5rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.3rem;
     grid-template-areas:
-      "variedad variedad"
-      "dato noticias"
-      "podio podio";
+    "variedad variedad"
+    "dato noticias"
+    "podio podio";
+    
     .noticias {
       h2 {
         font-size: 2rem;
@@ -32,10 +38,13 @@
         font-size: 2.5rem;
       }
       .podio {
-        padding: 2rem;
+        padding: 1.8rem;
       }
     }
   }
+
+  /*guias*/
+
   .instructivo {
     display: flex;
     flex-direction: column;
@@ -47,11 +56,17 @@
       margin: 1rem;
     }
   }
-  .primerseccion {
-    p {
-      font-size: 1.3rem;
+
+  /*cannabisMedicinal*/
+  .seccionUno  .seccionUno__opciones {
+    
+    h5 {
+      font-size: 1.5rem;
+      
     }
+    
   }
+
   .investigaciones {
     h3 {
       font-size: 2.5rem;
@@ -73,6 +88,8 @@
       width: 40rem;
     }
   }
+ 
+  /*tienda*/
 
   .productos article {
     h2 {
@@ -82,6 +99,8 @@
     width: 20rem;
     height: 30rem;
   }
+
+  /*contacto*/
   .contacto article {
     img {
       width: 100%;
@@ -91,6 +110,8 @@
     justify-content: center;
     align-items: center;
   }
+
+  /*footer*/
   footer {
     img {
       padding: 1.5rem;
@@ -105,7 +126,7 @@
 
 @media (max-width: 576px) {
   #opcionesMenu li {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .menu div {
     img {
@@ -142,17 +163,24 @@
     }
     .segundaSeccion{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2 {
-      text-align: center;
-      font-size: 2.3rem;
+    
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .podio {
-        margin-top: 1rem;
-        width: 18rem;
-        
+      h2 {
+        font-size: 2rem;
+        padding: 1.5rem;
+
+      }
+      .podio {
+        width: 60%;
+        img{    
+          height: 15rem;
+
+          
+        }
       }
 
     }
@@ -237,7 +265,6 @@
         font-size: 2rem;
       }
       iframe {
-        width: 15rem;
         height: 10rem;
       }
     }
