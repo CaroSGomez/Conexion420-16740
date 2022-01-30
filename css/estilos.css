@@ -256,6 +256,19 @@ footer .footer__redes ul li a img {
 .seccionCentral .seccionCentral__dos div {
   width: 100%;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .seccionCentral .seccionCentral__dos div .podio {
@@ -532,6 +545,7 @@ footer .footer__redes ul li a img {
   font-family: "Rampart One", cursive;
   color: #5c855c;
   background-image: url(https://image.freepik.com/vector-gratis/fondo-hoja-cannabis-botanico_23-2148787839.jpg);
+  background-position: revert;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,8 +808,11 @@ footer .footer__redes ul li a img {
   .seccionCentral .seccionCentral__dos h2 {
     font-size: 2.8rem;
   }
+  .seccionCentral .seccionCentral__dos div .podio {
+    width: 80%;
+  }
   .seccionCentral .seccionCentral__dos div .podio img {
-    height: 20rem;
+    height: 10rem;
   }
   .seccionCentral .seccionCentral__tres h2 {
     font-size: 2.5rem;
@@ -838,6 +855,9 @@ footer .footer__redes ul li a img {
   }
   .opciones div img {
     height: 20rem;
+  }
+  .productos {
+    background-position: top;
   }
   .contacto h1 {
     font-size: 2.5rem;

@@ -165,8 +165,9 @@
       }
       div {
         .podio {
+          width: 80%;
           img {
-            height: 20rem;
+            height: 10rem;
           }
         }
       }
@@ -221,6 +222,9 @@
       }
     }
   }
+  .productos {
+    background-position: top;
+  }
   .contacto {
     h1 {
       font-size: 2.5rem;
@@ -245,4 +249,3 @@
     }
   }
 }
-  
