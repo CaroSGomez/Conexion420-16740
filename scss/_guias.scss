@@ -42,7 +42,7 @@
 
 .secciones {
   font-family: "Changa", sans-serif;
-  h5{
+  h5 {
     background-color: rgba(123, 209, 66, 0.541);
     color: #447444;
   }
@@ -51,14 +51,14 @@
     display: flex;
     background-color: rgba(123, 209, 66, 0.192);
 
-    img{
-      width: 25%;
+    img {
+      width: 35%;
     }
-    p{
+    p {
       padding: 2rem;
     }
   }
-  a{
+  a {
     text-decoration: none;
     text-align: center;
     background-color: #5c855c;
@@ -69,5 +69,4 @@
     width: 6rem;
     margin: 0.5rem;
   }
-  
 }

@@ -151,6 +151,7 @@ footer .footer__redes ul li a img {
   margin: 0 auto;
   height: 35rem;
   width: 35rem;
+  padding: 0.5rem;
 }
 
 .seccionCentral {
@@ -267,6 +268,12 @@ footer .footer__redes ul li a img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0.3rem;
   height: 100%;
   padding: 2rem;
@@ -423,7 +430,7 @@ footer .footer__redes ul li a img {
 }
 
 .secciones .opcionManual img {
-  width: 25%;
+  width: 35%;
 }
 
 .secciones .opcionManual p {
@@ -563,7 +570,7 @@ footer .footer__redes ul li a img {
   border-radius: 150px;
   color: white;
   font-family: "Rampart One", cursive;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 0.5rem;
   margin: 1rem;
 }
@@ -592,7 +599,7 @@ footer .footer__redes ul li a img {
 }
 
 .contacto article img {
-  width: 45rem;
+  width: 50%;
   margin: 0.5rem;
 }
 
@@ -637,13 +644,10 @@ footer .footer__redes ul li a img {
 }
 
 @media (max-width: 768px) {
-  /*menu*/
-  #opcionesMenu li {
-    font-size: 2.5rem;
+  header nav ul li {
+    margin: 0.5rem;
   }
-  /*index*/
   .seccionCentral {
-    width: 100%;
     padding: 0;
     display: -ms-grid;
     display: grid;
@@ -654,19 +658,22 @@ footer .footer__redes ul li a img {
     gap: 0.3rem;
         grid-template-areas: "variedad variedad" "dato noticias" "podio podio";
   }
-  .seccionCentral .noticias h2 {
+  .seccionCentral .seccionCentral__uno .primerSeccion__elegida h5 {
+    font-size: 3rem;
+  }
+  .seccionCentral .seccionCentral__dos h2 {
+    font-size: 3.2rem;
+  }
+  .seccionCentral .seccionCentral__tres h2 {
+    font-size: 3rem;
+  }
+  .seccionCentral .seccionCentral__tres button {
     font-size: 2rem;
   }
-  .seccionCentral .noticias button {
-    font-size: 1rem;
+  .seccionCentral .seccionCentral__cuatro h3 {
+    font-size: 4rem;
+    margin: 1.5rem;
   }
-  .seccionCentral .segundaSeccion h2 {
-    font-size: 2.5rem;
-  }
-  .seccionCentral .segundaSeccion .podio {
-    padding: 1.8rem;
-  }
-  /*guias*/
   .instructivo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -682,48 +689,43 @@ footer .footer__redes ul li a img {
   .instructivo .instructivo__opciones {
     margin: 1rem;
   }
-  /*cannabisMedicinal*/
-  .seccionUno .seccionUno__opciones h5 {
+  .secciones .opcionManual {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secciones .opcionManual img {
+    width: 40%;
+    height: 20rem;
+  }
+  .secciones .opcionManual p {
+    font-size: 0.9rem;
+  }
+  .opciones div h5 {
     font-size: 1.5rem;
   }
-  .investigaciones h3 {
-    font-size: 2.5rem;
-  }
   .investigaciones article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .investigaciones article img {
-    width: 35rem;
-  }
-  .investigaciones article p {
-    font-size: 1rem;
-  }
-  .investigaciones .video {
-    height: 25rem;
-    width: 40rem;
-  }
-  /*tienda*/
   .productos article {
-    padding: 3rem;
     width: 20rem;
     height: 30rem;
   }
   .productos article h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
-  /*contacto*/
+  .productos article button {
+    font-size: 1.2rem;
+  }
+  .contacto h1 {
+    text-align: center;
+  }
   .contacto article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -738,28 +740,33 @@ footer .footer__redes ul li a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 1rem;
   }
   .contacto article img {
     width: 100%;
   }
-  /*footer*/
-  footer img {
-    padding: 1.5rem;
-    width: 12rem;
+  .contacto article .contacto__formulario {
+    width: 100%;
   }
-  footer .footer__redes ul li a img {
-    width: 3.8rem;
-    padding: 0.5rem;
+  .footer__redes ul li {
+    list-style-type: none;
+  }
+  .footer__redes ul li a img {
+    width: 3.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  #opcionesMenu li {
-    font-size: 1.5rem;
+  header nav img {
+    width: 7rem;
+    height: 7rem;
   }
-  .menu div img {
-    width: 6rem;
-    height: 6rem;
+  header nav ul li {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  header nav ul li :hover {
+    padding: 1.3rem;
   }
   .carrousel img {
     width: 20rem;
@@ -781,140 +788,82 @@ footer .footer__redes ul li a img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .seccionCentral .primerSeccion h5 {
-    font-size: 1.8rem;
+  .seccionCentral .seccionCentral__uno .primerSeccion__elegida h5 {
+    font-size: 2.5rem;
   }
-  .seccionCentral .primerSeccion img:hover {
-    width: 18rem;
+  .seccionCentral .seccionCentral__dos h2 {
+    font-size: 2.8rem;
   }
-  .seccionCentral .primerSeccion .primerSeccion__lista ul {
-    padding-right: 2rem;
-  }
-  .seccionCentral .primerSeccion .primerSeccion__lista ul li {
-    font-size: 1rem;
-  }
-  .seccionCentral .primerSeccion .primerSeccion__elegida p {
-    font-size: 1rem;
-  }
-  .seccionCentral .segundaSeccion {
-    width: 100%;
-  }
-  .seccionCentral .segundaSeccion div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .seccionCentral .segundaSeccion h2 {
-    font-size: 2rem;
-    padding: 1.5rem;
-  }
-  .seccionCentral .segundaSeccion .podio {
-    width: 60%;
-  }
-  .seccionCentral .segundaSeccion .podio img {
-    height: 15rem;
-  }
-  .seccionCentral .noticias h2 {
-    font-size: 2.1rem;
-  }
-  .seccionCentral .noticias button {
-    font-size: 1.3rem;
-  }
-  .seccionCentral .noticias .noticias__info {
-    font-size: 1rem;
-  }
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 1rem;
-  }
-  footer img {
-    padding: 1.5rem;
-    width: 9rem;
-  }
-  footer .footer__redes h3 {
-    font-size: 1.2rem;
-  }
-  footer .footer__redes ul {
-    padding: 0;
-  }
-  footer .footer__redes ul li a img {
-    width: 3rem;
-  }
-  .instructivo .instructivo__manual h1 {
-    font-size: 2.3rem;
-    padding-right: 1rem;
-  }
-  .instructivo .instructivo__manual img {
-    width: 15rem;
-    margin: 0;
-  }
-  .instructivo .instructivo__opciones {
-    padding: 0;
-    margin: 0;
-  }
-  .instructivo .instructivo__opciones li {
-    width: 100%;
-  }
-  .instructivo .instructivo__opciones li a {
-    font-size: 1.4rem;
-  }
-  .primerseccion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .primerseccion article p {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  .primerseccion article img {
+  .seccionCentral .seccionCentral__dos div .podio img {
     height: 20rem;
   }
-  .investigaciones article img {
+  .seccionCentral .seccionCentral__tres h2 {
+    font-size: 2.5rem;
+  }
+  .seccionCentral .seccionCentral__tres button {
+    font-size: 1.8rem;
+  }
+  .seccionCentral .seccionCentral__cuatro {
+    padding: 0;
+  }
+  .seccionCentral .seccionCentral__cuatro h3 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  .instructivo .instructivo__opciones {
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+  .instructivo .instructivo__opciones li {
+    margin: 1.5rem;
+  }
+  .instructivo .instructivo__opciones li a:hover {
+    background-color: #4f991e;
+    color: white;
+  }
+  .secciones .opcionManual {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secciones .opcionManual img {
     width: 100%;
   }
-  .investigaciones .box__style--dark h2 {
-    text-align: center;
-    font-size: 2rem;
+  .secciones .opcionManual p {
+    padding: 1rem;
   }
-  .investigaciones .box__style--dark iframe {
-    height: 10rem;
+  .secciones a {
+    margin: 0.2rem;
   }
-  .contacto .contacto__titulo {
-    text-align: center;
+  .opciones div img {
+    height: 20rem;
+  }
+  .contacto h1 {
     font-size: 2.5rem;
+  }
+  .contacto article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .contacto article .contacto__formulario {
     width: 100%;
   }
-  .contacto article .contacto__formulario label {
-    font-size: 1rem;
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.3rem;
   }
-  .contacto article .contacto__formulario .contacto__formulario__botones {
-    font-size: 0.9rem;
+  footer .footer__redes ul {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
