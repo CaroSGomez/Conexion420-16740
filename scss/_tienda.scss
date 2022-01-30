@@ -1,32 +1,28 @@
 .productos {
   font-family: "Rampart One", cursive;
   color: #5c855c;
-  background: linear-gradient(
-    to left,
-    rgba(123, 209, 66, 0.493),
-    ivory,
-    rgba(123, 209, 66, 0.493),
-    ivory
-  );
+  background-image: url(https://image.freepik.com/vector-gratis/fondo-hoja-cannabis-botanico_23-2148787839.jpg);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
   article {
     background-color: ivory;
     margin: 1rem;
     text-align: center;
     width: 25rem;
     height: 35rem;
-    padding: 1.9rem;
+    padding: 2rem;
     border-radius: 150px;
     border: dotted 0.3rem #5c855c;
+  }
+  article:hover {
+    background-color: rgba(110, 161, 76, 0.842);
+    color: white;
   }
   img {
     width: 100%;
     height: 80%;
-    padding: 1rem;
   }
   button {
     background-color: #5c855c;
@@ -35,11 +31,6 @@
     font-family: "Rampart One", cursive;
     font-size: 1.5rem;
     padding: 0.5rem;
+    margin: 1rem;
   }
 }
-
-.productos article:hover {
-  background-color: rgba(110, 161, 76, 0.425);
-  color: white;
-}
-

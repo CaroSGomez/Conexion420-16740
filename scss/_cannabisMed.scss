@@ -1,5 +1,5 @@
-.seccionUno {
-  padding: 1rem;
+.opciones {
+  padding: 0.5rem;
   text-align: center;
   background-image: linear-gradient(
     to right top,
@@ -9,7 +9,7 @@
     #a5edae,
     #9aeea1
   );
-  .seccionUno__opciones {
+  div {
     border: 0.3rem solid #5c855c !important;
     border-radius: 10% !important;
     background-color: #ddffdd;
@@ -17,15 +17,13 @@
     margin: 1rem;
     h5 {
       font-size: 2rem;
-      font-weight: 600;
-      text-align: center;
       text-decoration: underline;
       color: rgb(92, 133, 92);
     }
     img {
       margin-top: 1.5rem;
       border-radius: 15%;
-      height: 60%;
+      height: 80%;
     }
   }
 }
@@ -41,7 +39,7 @@
   h3 {
     text-decoration: underline;
   }
-  .investigaciones__aceite {
+  article {
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -54,20 +52,19 @@
     }
     img {
       width: 100%;
-      margin: 1rem;
     }
-  }
-  h2 {
-    text-decoration: underline;
-    margin: 1rem;
-    color: #5c855c;
-    background-color: #f1fff081;
   }
   .investigaciones__documental {
     background-image: url(../multimedia/imagenes/4720828.jpg);
+    h2 {
+      text-decoration: underline;
+      color: #5c855c;
+      background-color: #f1fff081;
+    }
     iframe {
       width: 90%;
-      height: 20rem;
+      height: 25rem;
+      margin: 1rem;
     }
   }
 }

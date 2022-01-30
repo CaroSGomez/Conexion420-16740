@@ -21,22 +21,6 @@ font-family: 'Quicksand', sans-serif;*/
   font-size: 2rem;
 }
 
-.box__style, .box__style--dark {
-  border: 0.3rem solid #5c855c;
-}
-
-.box__style--dark {
-  background-color: rgba(123, 209, 66, 0.336);
-  padding: 2rem;
-}
-
-.btn--form {
-  background-color: #5c855c;
-  border-radius: 150px;
-  color: white;
-  width: 32%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -57,20 +41,18 @@ header {
       justify-content: space-around;
 }
 
-header .menu {
+header nav {
   width: 100%;
   height: 100%;
 }
 
-header .menu img {
+header nav img {
   width: 10rem;
   height: 10rem;
-  margin-right: 5rem;
 }
 
-#opcionesMenu {
+header nav ul {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,24 +64,26 @@ header .menu img {
           align-items: center;
 }
 
-#opcionesMenu li {
+header nav ul li {
   text-align: center;
-  width: 14rem;
   list-style: none;
   font-size: 2.2rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
-  padding: 0.5rem;
 }
 
-#opcionesMenu li a {
+header nav ul li a {
+  padding: 1rem;
   color: white;
   text-decoration: none;
+  width: 5rem;
 }
 
-#opcionesMenu li:hover {
+header nav ul li :hover {
   background-color: #398506;
   border-radius: 150px;
+  color: white;
+  padding: 2rem;
 }
 
 footer {
@@ -183,25 +167,25 @@ footer .footer__redes ul li a img {
       grid-template-areas: "variedad noticias" "podio dato";
 }
 
-.seccionCentral .primerSeccion {
+.seccionCentral .seccionCentral__uno {
   background-color: rgba(123, 209, 66, 0.336);
   text-align: center;
+  font-family: "Changa", sans-serif;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: variedad;
 }
 
-.seccionCentral .primerSeccion .primerSeccion__elegida {
+.seccionCentral .seccionCentral__uno .primerSeccion__elegida {
   background-color: rgba(123, 209, 66, 0.336);
 }
 
-.seccionCentral .primerSeccion h5 {
-  font-family: "Changa", sans-serif;
+.seccionCentral .seccionCentral__uno .primerSeccion__elegida h5 {
   color: #5c855c;
   text-decoration: underline;
 }
 
-.seccionCentral .primerSeccion img {
+.seccionCentral .seccionCentral__uno .primerSeccion__elegida img {
   width: 15rem;
   height: 20rem;
   -webkit-transition: all 2s;
@@ -209,37 +193,40 @@ footer .footer__redes ul li a img {
   margin: 1rem;
 }
 
-.seccionCentral .primerSeccion p {
+.seccionCentral .seccionCentral__uno .primerSeccion__elegida img:hover {
+  width: 25rem;
+  height: 25rem;
+}
+
+.seccionCentral .seccionCentral__uno .primerSeccion__elegida p {
   padding: 1rem;
-  font-family: "Changa", sans-serif;
   font-size: 1.2rem;
   font-style: italic;
   font-weight: lighter;
 }
 
-.seccionCentral .primerSeccion .primerSeccion__lista {
+.seccionCentral .seccionCentral__uno .primerSeccion__lista {
   color: #5c855c;
-  font-family: "Changa", sans-serif;
   background-color: #f1fff0;
   padding: 1rem;
   margin: 1.5rem;
 }
 
-.seccionCentral .primerSeccion .primerSeccion__lista h2 {
+.seccionCentral .seccionCentral__uno .primerSeccion__lista h2 {
   text-decoration: underline;
 }
 
-.seccionCentral .primerSeccion .primerSeccion__lista ul {
+.seccionCentral .seccionCentral__uno .primerSeccion__lista ul {
   padding: 0;
 }
 
-.seccionCentral .primerSeccion .primerSeccion__lista ul li {
+.seccionCentral .seccionCentral__uno .primerSeccion__lista ul li {
   font-size: 1.5rem;
   list-style-type: none;
   background-color: rgba(123, 209, 66, 0.151);
 }
 
-.seccionCentral .segundaSeccion {
+.seccionCentral .seccionCentral__dos {
   text-align: center;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -254,26 +241,23 @@ footer .footer__redes ul li a img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 0.3rem solid #5c855c;
+  font-family: "Rampart One", cursive;
 }
 
-.seccionCentral .segundaSeccion h2 {
-  font-family: "Rampart One", cursive;
+.seccionCentral .seccionCentral__dos h2 {
   color: #5c855c;
 }
 
-.seccionCentral .segundaSeccion div {
+.seccionCentral .seccionCentral__dos div {
   width: 100%;
   padding: 1rem;
 }
 
-.seccionCentral .segundaSeccion div :hover {
-  background-color: rgba(110, 161, 76, 0.425);
-}
-
-.seccionCentral .segundaSeccion .podio {
-  background-color: rgba(20, 121, 20, 0.055);
+.seccionCentral .seccionCentral__dos div .podio {
   border: dotted 0.3rem #5c855c;
   border-radius: 5rem;
   display: -webkit-box;
@@ -283,73 +267,70 @@ footer .footer__redes ul li a img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0.3rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
   height: 100%;
   padding: 2rem;
 }
 
-.seccionCentral .segundaSeccion .podio img {
+.seccionCentral .seccionCentral__dos div .podio img {
   width: 100%;
   height: 100%;
   background-color: white;
 }
 
-.seccionCentral .segundaSeccion .podio .visitar {
+.seccionCentral .seccionCentral__dos div .podio a {
   margin: 2rem;
   text-decoration: none;
   background-color: #5c855c;
   border-radius: 150px;
   color: white;
-  font-family: "Rampart One", cursive;
   font-size: 1rem;
   padding: 0.5rem;
-  padding: 1rem;
 }
 
-.seccionCentral .noticias {
+.seccionCentral .seccionCentral__dos div .podio:hover {
+  background-color: rgba(123, 209, 66, 0.336);
+}
+
+.seccionCentral .seccionCentral__tres {
   padding: 1rem;
   font-family: "Architects Daughter", cursive;
   color: #5c855c;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: noticias;
+  border: 0.3rem solid #5c855c;
 }
 
-.seccionCentral .noticias h2 {
+.seccionCentral .seccionCentral__tres h2 {
   text-align: center;
 }
 
-.seccionCentral .noticias button {
+.seccionCentral .seccionCentral__tres button {
   font-size: 2.5rem;
   color: #5c855c;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1)) !important;
   background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1) !important;
 }
 
-.seccionCentral .noticias .noticias__info {
+.seccionCentral .seccionCentral__tres .noticias__info {
   font-size: 1rem;
 }
 
-.seccionCentral .noticias .noticias__info a {
+.seccionCentral .seccionCentral__tres .noticias__info a {
+  margin: 0.5rem;
+  padding: 0.2rem;
   font-weight: bold;
   color: #5c855c;
   text-decoration: none;
 }
 
-.seccionCentral .noticias .noticias__info a:hover {
+.seccionCentral .seccionCentral__tres .noticias__info a:hover {
   border-radius: 150px;
   border: #5c855c solid;
-  padding: 0.2rem;
 }
 
-.seccionCentral .dato {
+.seccionCentral .seccionCentral__cuatro {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: dato;
@@ -359,34 +340,21 @@ footer .footer__redes ul li a img {
   padding: 1.5rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
   color: #5c855c;
-  height: 100%;
-  width: 100%;
 }
 
-.seccionCentral .dato h3 {
+.seccionCentral .seccionCentral__cuatro h3 {
   background-color: #f1fff0;
-  padding: 0.5rem;
 }
 
-.seccionCentral .dato img {
+.seccionCentral .seccionCentral__cuatro img {
   width: 100%;
   height: 70%;
   padding: 0.5rem;
 }
 
-.seccionCentral .dato p {
+.seccionCentral .seccionCentral__cuatro p {
   font-size: 2.3rem;
-  padding: 0.5rem;
   background-color: #f1fff0;
-}
-
-.primerSeccion img:hover {
-  width: 25rem;
-  height: 25rem;
-}
-
-.podio:hover {
-  background-color: rgba(123, 209, 66, 0.336);
 }
 
 .instructivo {
@@ -403,18 +371,11 @@ footer .footer__redes ul li a img {
   background: -webkit-gradient(linear, right top, left top, from(rgba(123, 209, 66, 0.493)), color-stop(ivory), color-stop(rgba(123, 209, 66, 0.493)), to(ivory));
   background: linear-gradient(to left, rgba(123, 209, 66, 0.493), ivory, rgba(123, 209, 66, 0.493), ivory);
   border: 0.5rem double #4f991e;
-  padding: 1rem;
 }
 
 .instructivo .instructivo__manual {
-  padding: 1rem;
   text-align: center;
-}
-
-.instructivo .instructivo__manual h1 {
   text-decoration: underline;
-  text-align: center;
-  font-size: 3.5rem;
 }
 
 .instructivo .instructivo__manual img {
@@ -422,7 +383,6 @@ footer .footer__redes ul li a img {
 }
 
 .instructivo .instructivo__opciones {
-  padding: 1rem;
   list-style-type: none;
   text-align: start;
   font-size: 2.3rem;
@@ -440,37 +400,56 @@ footer .footer__redes ul li a img {
   border-radius: 150px;
 }
 
-.instructivo__opciones li a:hover {
+.instructivo .instructivo__opciones li a:hover {
   background-color: #4f991e;
   color: white;
 }
 
-.secciones .opcionManual {
-  font-family: "Quicksand", sans-serif;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-weight: bold;
-  background-color: #f1fff0;
-}
-
-.secciones .opcionManual button {
-  margin: 0.5rem;
-}
-
-.secciones .card-header.titulo {
-  background-color: rgba(123, 209, 66, 0.541);
-  color: #447444;
+.secciones {
   font-family: "Changa", sans-serif;
 }
 
-.seccionUno {
+.secciones h5 {
+  background-color: rgba(123, 209, 66, 0.541);
+  color: #447444;
+}
+
+.secciones .opcionManual {
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(123, 209, 66, 0.192);
+}
+
+.secciones .opcionManual img {
+  width: 25%;
+}
+
+.secciones .opcionManual p {
+  padding: 2rem;
+}
+
+.secciones a {
+  text-decoration: none;
+  text-align: center;
+  background-color: #5c855c;
+  border-radius: 150px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 6rem;
+  margin: 0.5rem;
+}
+
+.opciones {
+  padding: 0.5rem;
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#c9ead0), color-stop(#bdebc5), color-stop(#b1edba), color-stop(#a5edae), to(#9aeea1));
   background-image: linear-gradient(to right top, #c9ead0, #bdebc5, #b1edba, #a5edae, #9aeea1);
 }
 
-.seccionUno .seccionUno__opciones {
+.opciones div {
   border: 0.3rem solid #5c855c !important;
   border-radius: 10% !important;
   background-color: #ddffdd;
@@ -478,18 +457,16 @@ footer .footer__redes ul li a img {
   margin: 1rem;
 }
 
-.seccionUno .seccionUno__opciones h5 {
+.opciones div h5 {
   font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
   text-decoration: underline;
   color: #5c855c;
 }
 
-.seccionUno .seccionUno__opciones img {
+.opciones div img {
   margin-top: 1.5rem;
   border-radius: 15%;
-  height: 60%;
+  height: 80%;
 }
 
 .investigaciones {
@@ -506,7 +483,7 @@ footer .footer__redes ul li a img {
   text-decoration: underline;
 }
 
-.investigaciones .investigaciones__aceite {
+.investigaciones article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,7 +493,7 @@ footer .footer__redes ul li a img {
   padding: 1rem;
 }
 
-.investigaciones .investigaciones__aceite p {
+.investigaciones article p {
   font-style: italic;
   font-size: 1rem;
   margin: 1rem;
@@ -524,32 +501,30 @@ footer .footer__redes ul li a img {
   height: 100%;
 }
 
-.investigaciones .investigaciones__aceite img {
+.investigaciones article img {
   width: 100%;
-  margin: 1rem;
-}
-
-.investigaciones h2 {
-  text-decoration: underline;
-  margin: 1rem;
-  color: #5c855c;
-  background-color: #f1fff081;
 }
 
 .investigaciones .investigaciones__documental {
   background-image: url(../multimedia/imagenes/4720828.jpg);
 }
 
+.investigaciones .investigaciones__documental h2 {
+  text-decoration: underline;
+  color: #5c855c;
+  background-color: #f1fff081;
+}
+
 .investigaciones .investigaciones__documental iframe {
   width: 90%;
-  height: 20rem;
+  height: 25rem;
+  margin: 1rem;
 }
 
 .productos {
   font-family: "Rampart One", cursive;
   color: #5c855c;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(123, 209, 66, 0.493)), color-stop(ivory), color-stop(rgba(123, 209, 66, 0.493)), to(ivory));
-  background: linear-gradient(to left, rgba(123, 209, 66, 0.493), ivory, rgba(123, 209, 66, 0.493), ivory);
+  background-image: url(https://image.freepik.com/vector-gratis/fondo-hoja-cannabis-botanico_23-2148787839.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,7 +535,6 @@ footer .footer__redes ul li a img {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1rem;
 }
 
 .productos article {
@@ -569,15 +543,19 @@ footer .footer__redes ul li a img {
   text-align: center;
   width: 25rem;
   height: 35rem;
-  padding: 1.9rem;
+  padding: 2rem;
   border-radius: 150px;
   border: dotted 0.3rem #5c855c;
+}
+
+.productos article:hover {
+  background-color: rgba(110, 161, 76, 0.842);
+  color: white;
 }
 
 .productos img {
   width: 100%;
   height: 80%;
-  padding: 1rem;
 }
 
 .productos button {
@@ -587,11 +565,7 @@ footer .footer__redes ul li a img {
   font-family: "Rampart One", cursive;
   font-size: 1.5rem;
   padding: 0.5rem;
-}
-
-.productos article:hover {
-  background-color: rgba(110, 161, 76, 0.425);
-  color: white;
+  margin: 1rem;
 }
 
 .contacto {
@@ -602,8 +576,7 @@ footer .footer__redes ul li a img {
   color: #5c855c;
 }
 
-.contacto .contacto__titulo {
-  padding: 1rem;
+.contacto h1 {
   text-align: start;
 }
 
@@ -612,6 +585,7 @@ footer .footer__redes ul li a img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -638,10 +612,6 @@ footer .footer__redes ul li a img {
           flex-direction: column;
 }
 
-.contacto article .contacto__formulario input {
-  height: 1.5rem;
-}
-
 .contacto article .contacto__formulario .newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,6 +622,14 @@ footer .footer__redes ul li a img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 1rem;
+}
+
+.contacto article .contacto__formulario .contacto__formulario__botones input {
+  border-radius: 150px;
+  color: white;
+  width: 32%;
+  height: 1.5rem;
+  background-color: #5c855c;
 }
 
 .contacto__formulario__botones input:hover {

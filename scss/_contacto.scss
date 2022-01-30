@@ -10,13 +10,13 @@
   padding: 1rem;
   font-family: "Changa", sans-serif;
   color: #5c855c;
-  .contacto__titulo {
-    padding: 1rem;
+  h1 {
     text-align: start;
   }
   article {
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: space-evenly;
     img {
       width: 45rem;
@@ -31,14 +31,19 @@
       margin: 0.5rem;
       display: flex;
       flex-direction: column;
-      input {
-        height: 1.5rem;
-      }
+     
       .newsletter {
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin: 1rem;
+      }
+      .contacto__formulario__botones input {
+        border-radius: 150px;
+        color: white;
+        width: 32%;
+        height: 1.5rem;
+        background-color: #5c855c;
       }
       
     }
