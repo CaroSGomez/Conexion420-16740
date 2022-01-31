@@ -259,10 +259,6 @@ footer .footer__redes ul li a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -407,10 +403,12 @@ footer .footer__redes ul li a img {
   text-align: start;
   font-size: 2.3rem;
   font-style: italic;
+  padding: 1rem;
 }
 
 .instructivo .instructivo__opciones li {
   margin: 2rem;
+  width: 100%;
 }
 
 .instructivo .instructivo__opciones li a {
@@ -439,11 +437,18 @@ footer .footer__redes ul li a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(123, 209, 66, 0.192);
 }
 
 .secciones .opcionManual img {
   width: 35%;
+  height: 40%;
 }
 
 .secciones .opcionManual p {
@@ -805,8 +810,17 @@ footer .footer__redes ul li a img {
   .seccionCentral .seccionCentral__uno .primerSeccion__elegida h5 {
     font-size: 2.5rem;
   }
+  .seccionCentral .seccionCentral__dos {
+    width: 100%;
+  }
   .seccionCentral .seccionCentral__dos h2 {
     font-size: 2.8rem;
+  }
+  .seccionCentral .seccionCentral__dos div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .seccionCentral .seccionCentral__dos div .podio {
     width: 80%;
@@ -827,12 +841,21 @@ footer .footer__redes ul li a img {
     font-size: 3rem;
     margin: 1rem;
   }
+  .instructivo .instructivo__manual {
+    width: 100%;
+  }
+  .instructivo .instructivo__manual img {
+    width: 100%;
+    padding: 3rem;
+  }
   .instructivo .instructivo__opciones {
-    font-size: 1.8rem;
-    padding: 0.8rem;
+    font-size: 1.4rem;
+    padding: 0;
   }
   .instructivo .instructivo__opciones li {
-    margin: 1.5rem;
+    margin: 1rem;
+    width: 100%;
+    padding: 0.5rem;
   }
   .instructivo .instructivo__opciones li a:hover {
     background-color: #4f991e;

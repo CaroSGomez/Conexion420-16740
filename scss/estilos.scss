@@ -160,10 +160,12 @@
       }
     }
     .seccionCentral__dos {
+      width: 100%;
       h2 {
         font-size: 2.8rem;
       }
       div {
+        flex-direction: column;
         .podio {
           width: 80%;
           img {
@@ -189,11 +191,21 @@
     }
   }
   .instructivo {
+    .instructivo__manual{
+      width: 100%;
+     img{
+       width: 100%;
+       padding: 3rem;
+     }
+    }
     .instructivo__opciones {
-      font-size: 1.8rem;
-      padding: 0.8rem;
+      font-size: 1.4rem;
+      padding: 0;
       li {
-        margin: 1.5rem;
+        margin: 1rem;
+        width: 100%;
+        padding: 0.5rem;
+
       }
     }
     .instructivo__opciones li a:hover {
